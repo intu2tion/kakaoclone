@@ -10,7 +10,31 @@ body{
 .status-bar {
     background-color: white;
     display: flex;  justify-content: space-between; margin-bottom: 25px;
+    margin: 0;
+    border: 2px solid white;
 }
+
+.menu {
+    background-color: white;
+    display: flex;  justify-content: space-between; 
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: red;
+}
+
+.profile {
+    display: flex;  justify-content: start; margin-bottom: 25px;
+}
+
+.menu__text {
+    font-size: 20px;
+}
+
+.profile__text {
+    /* border-top: 20px solid red; */
+   margin-top: 15px;
+}
+
 .before {
     display: flex;
     align-items: center;
@@ -26,7 +50,7 @@ body{
 }
 
 @media (max-width:500px){
-    body{background-color: red;}
+    body{background-color: white;}
     .before{display: none;}
     .main{display: unset;} 
 }
