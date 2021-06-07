@@ -1,0 +1,32 @@
+body{
+    background-color: #fef01b;
+
+}
+
+.main{
+    display: none;
+}
+
+.status-bar {
+    background-color: white;
+    display: flex;  justify-content: space-between; margin-bottom: 25px;
+}
+.before {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 800px;
+    font-family: Helvetica;
+    margin:0;
+    top:50%;
+    left:50%;
+}
+.before__text {
+    font-size: 30px;
+}
+
+@media (max-width:500px){
+    body{background-color: red;}
+    .before{display: none;}
+    .main{display: unset;} 
+}
