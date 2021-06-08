@@ -10,29 +10,41 @@ body{
 .status-bar {
     background-color: white;
     display: flex;  justify-content: space-between; margin-bottom: 25px;
-    margin: 0;
     border: 2px solid white;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
 }
 
-.menu {
+.menu-top {
     background-color: white;
     display: flex;  justify-content: space-between; 
     margin-bottom: 20px;
-    margin-top: 10px;
-    background-color: red;
+    margin-top: 50px;
 }
 
 .profile {
-    display: flex;  justify-content: start; margin-bottom: 25px;
+    display: flex;  justify-content: start; margin-bottom: 12px;
 }
 
-.menu__text {
+.multi-pr {
+    display: flex;  justify-content: start; margin-bottom: 12px;
+}
+
+
+.menu-top__text {
     font-size: 20px;
 }
 
 .profile__text {
     /* border-top: 20px solid red; */
    margin-top: 15px;
+   margin-left: 10px;
+}
+
+.multi-pr__text {
+
 }
 
 .before {
@@ -49,6 +61,42 @@ body{
     font-size: 30px;
 }
 
+.title1, .title2 {
+    font-size: 14px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.multi-pr__text {
+    color: black;
+    font-size: 16px;
+    margin-top: 16px;
+    margin-left: 7px;
+}
+
+.profile__img img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* 이미지 배율 */
+    border-radius: 40%; /* 이미지 둥글게 */
+    
+}
+
+.multi-pr__img-fr img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover; /* 이미지 배율 */
+    border-radius: 40%; /* 이미지 둥글게 */
+    margin: 5px;
+    margin-top: 8px;
+}
+
+.profile_img {
+    margin: 5px;
+}
+.line {
+    color: red;
+}
 @media (max-width:500px){
     body{background-color: white;}
     .before{display: none;}
