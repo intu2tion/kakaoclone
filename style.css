@@ -11,6 +11,7 @@ body{
     background-color: white;
     display: flex;  justify-content: space-between; margin-bottom: 25px;
     border: 2px solid white;
+
     position: fixed;
     top:0;
     right:0;
@@ -24,27 +25,30 @@ body{
     margin-top: 50px;
 }
 
+.menu-top__text {
+    font-size: 20px;
+}
+
+.menu-top__icon {
+    font-size: 20px;
+}
+
+.menu-top__icon1, .menu-top__icon2, .menu-top__icon3 {
+    margin-right: 15px;
+}
+
 .profile {
     display: flex;  justify-content: start; margin-bottom: 12px;
 }
 
-.multi-pr {
+.multi-pr, .birth {
     display: flex;  justify-content: start; margin-bottom: 12px;
-}
-
-
-.menu-top__text {
-    font-size: 20px;
 }
 
 .profile__text {
     /* border-top: 20px solid red; */
    margin-top: 15px;
    margin-left: 10px;
-}
-
-.multi-pr__text {
-
 }
 
 .before {
@@ -61,13 +65,23 @@ body{
     font-size: 30px;
 }
 
-.title1, .title2 {
+.title1-list, .title2-list {
     font-size: 14px;
     color: gray;
     margin-top: 15px;
 }
 
-.multi-pr__text {
+/* 이부분이 지금 문제! */
+.title1-list, .title2-list {
+    background-color: white;
+    display: flex;  justify-content: space-between;
+}
+
+.title1-icon, .title2-icon {
+    margin-top: 10px;
+}
+
+.multi-pr__text, .birth__text {
     color: black;
     font-size: 16px;
     margin-top: 16px;
@@ -82,7 +96,7 @@ body{
     
 }
 
-.multi-pr__img-fr img {
+.multi-pr__img-fr img, .birth__img-fr img {
     width: 40px;
     height: 40px;
     object-fit: cover; /* 이미지 배율 */
