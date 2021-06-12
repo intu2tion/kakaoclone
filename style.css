@@ -43,8 +43,20 @@ body{
     display: flex;  justify-content: start; margin-bottom: 12px;
 }
 
-.multi-pr, .birth {
+.multi-pr, .birth, .reco, .ch {
     display: flex;  justify-content: start; margin-bottom: 12px;
+}
+
+.fr-list__content1, .fr-list__content2 {
+    display: flex;
+}
+.reco, .ch{
+    display:none;
+    /* 추천친구의 화살표의 기본모양을 아래방향으로 바꾸는 방법?,
+    원래 닫혀있는 탭을 열고 닫을때 display를 제대로 설정하는 법? 
+    display: none을 하면 슬라이드가 안먹힘?
+    if문의 조건을 ==false 로 바꿔서 하는게 나은가?
+    (카톡은 설정해놓고 나가면 앱종료해도 고정되는데 그건 어떻게 하나?) */
 }
 
 .profile__text {
@@ -67,27 +79,47 @@ body{
     font-size: 30px;
 }
 
-.title1-list, .title2-list {
+.title1-list, .title2-list, .title3-list, .title4-list, .title5-list {
     font-size: 14px;
     color: gray;
     margin-top: 15px;
 }
 
 /* 이부분이 지금 문제! */
-.title1-list, .title2-list {
+.title1-list, .title2-list, .title3-list, .title4-list, .title5-list {
     background-color: white;
     display: flex;  justify-content: space-between;
 }
-
-.title1-icon, .title2-icon {
-    margin-top: 10px;
-}
-
-.multi-pr__text, .birth__text {
+.multi-pr__text, .birth__text, .reco__text, .ch__text {
     color: black;
     font-size: 16px;
     margin-top: 16px;
     margin-left: 7px;
+}
+
+/* 상메가 있을때 */
+.fr-list__name1 {
+    margin-top: 8px;
+    margin-left: 7px;
+    font-size: 16px;
+}
+
+.fr-list__msg1 {
+    margin-top: 27px;
+    margin-left: -29px;
+    font-size: 13px;
+    color: gray;
+}
+
+/* 상메가 없을떄 */
+.fr-list__name2 {
+    margin-top: 16px;
+    margin-left: 7px;
+    font-size: 16px;
+}
+
+.bottom__icon {
+	justify-content: space-around;
 }
 
 .profile__img img {
@@ -98,7 +130,7 @@ body{
     
 }
 
-.multi-pr__img-fr img, .birth__img-fr img {
+.multi-pr__img-fr img, .birth__img-fr img, .reco__img-fr img, .ch__img-fr img, .fr-list__img-fr img {
     width: 40px;
     height: 40px;
     object-fit: cover; /* 이미지 배율 */

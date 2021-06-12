@@ -82,10 +82,13 @@
 <script>
     $(".title1-icon").click(function(){
         if($(".multi-pr").is(":visible")){
-            $(".multi-pr").css("display","none");
+            $(".title1-icon").css("transform","rotate(180deg)");
+            $(".multi-pr").css("display","flex");
+            $(".multi-pr").slideUp();
         }
         else{
-            $(".multi-pr").css("display","flex");
+            $(".title1-icon").css("transform","rotate(0deg)");
+            $(".multi-pr").slideDown();
         }
     })
 </script>
@@ -104,31 +107,136 @@
         <div class="birth__text">친구의 생일을 확인해보세요!</div>
     </div>
 
-
+<!-- 핵심 기능 바꾸는 중 -->
 <script>
 $(".title2-icon").click(function(){
     if($(".birth").is(":visible")){
         $(".title2-icon").css("transform","rotate(180deg)");
-        $(".birth").css("display","none");
+        $(".birth").css("display","flex");
         $(".birth").slideUp();
     }
     else{
-        $(".birth").css("display","flex");
         $(".title2-icon").css("transform","rotate(0deg)");
-        $(".sub").slideDown();
+        $(".birth").slideDown();
     }
 })
 </script>
 
 <!--line--> <hr class="line" color="#EAEAEA" size="0"></hr>
 
-
-
-
+<!-- 추천친구 -->
+<div class="title3-list">
+    <div class="title3">추천 친구</div>
+    <div class="title3-icon"> <i class="fa fa-angle-down"></i></div>
 </div>
 
 
+<div class="reco">
+    <div class="reco__img-fr"><img src="kaofriends.jpg"></div>
+    <div class="reco__text">친구의 생일을 확인해보세요!</div>
 </div>
+
+
+<script>
+$(".title3-icon").click(function(){
+    if($(".reco").is(":visible")){
+        $(".reco").css("display","flex");
+        $(".reco").slideUp();
+        $(".title3-icon").css("transform","rotate(0deg)");
+    }
+    else{
+        $(".title3-icon").css("transform","rotate(180deg)");
+        $(".reco").slideDown();
+        $(".reco").css("display","flex");
+    }
+})
+</script>
+
+<!--line--> <hr class="line" color="#EAEAEA" size="0"></hr>
+
+<!-- 채널 -->
+<div class="title4-list">
+    <div class="title4">채널</div>
+    <div class="title4-icon"> <i class="fa fa-angle-down"></i></div>
+</div>
+
+
+<div class="ch">
+    <div class="ch__img-fr"><img src="kaofriends.jpg"></div>
+    <div class="ch__text">친구의 생일을 확인해보세요!</div>
+</div>
+
+
+<script>
+$(".title4-icon").click(function(){
+    if($(".ch").is(":visible")){
+        $(".ch").css("display","flex");
+        $(".ch").slideUp();
+        $(".title4-icon").css("transform","rotate(0deg)");
+    }
+    else{
+        $(".title4-icon").css("transform","rotate(180deg)");
+        $(".ch").slideDown();
+        $(".ch").css("display","flex");
+    }
+})
+</script>
+
+<!--line--> <hr class="line" color="#EAEAEA" size="0"></hr>
+
+<!-- 친구목록 -->
+<div class="title5-list">
+    <div class="title5">친구 100</div>
+    <div class="title5-icon"> <i class="fa fa-angle-up"></i></div>
+</div>
+
+
+    <div class="fr-list">
+        <div class="fr-list__content1">
+            <div class="fr-list__img-fr"><img src="kaofriends.jpg"></div>
+            <div class="fr-list__name1">렁직</div>
+            <div class="fr-list__msg1">상태메시지입니다</div>
+        </div>
+        <div class="fr-list__content2">
+            <div class="fr-list__img-fr"><img src="kaofriends.jpg"></div>
+            <div class="fr-list__name2">테스트용 아이디</div>
+            <div class="fr-list__msg2"></div>
+        </div>
+    </div>
+
+
+<script>
+$(".title5-icon").click(function(){
+    if($(".fr-list").is(":visible")){
+        $(".title5-icon").css("transform","rotate(180deg)");
+        $(".fr-list").css("display","flex");
+        $(".fr-list").slideUp();
+    }
+    else{
+        $(".title5-icon").css("transform","rotate(0deg)");
+        $(".fr-list").slideDown();
+    }
+})
+</script>
+
+</div>
+
+<!-- 하단바 시작 -->
+<div class="bottom">
+    <div class="bottom__icon">
+        <div class="bottom__icon1"><i class="far fa-user"></i></div>
+        <div class="bottom__icon2"><i class="far fa-comment"></i></div>
+        <div class="bottom__icon3"><i class="fas fa-hashtag"></i></div>
+        <div class="bottom__icon4"><i class="far fa-bookmark"></i></div>
+        <div class="bottom__icon5"><i class="fas fa-ellipsis-h"></i></div>
+    </div>
+</div>
+
+
+
+
+<!--main 끝 --></div>
+
 
 </div>
 </body>
