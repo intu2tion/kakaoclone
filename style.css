@@ -159,3 +159,46 @@ a {
     .before{display: none;}
     .main{display: unset;} 
 }
+
+/*      index2        */
+.chat-mid1__pro img, .chat-mid2__pro img {
+    width: 45px; height: 45px; 
+    object-fit: cover;
+    border-radius: 40%;
+}
+
+.chat-mid1 {
+    position: relative;
+    display: flex;
+}
+
+.chat-mid1__name, .chat-mid2__name {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 3px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.chat-mid1__chat, .chat-mid2__chat {
+    font-size: 13px;
+    margin-top: 23px;
+    margin-left: -43px;
+    color: gray;
+}
+
+/* 12:32와 어제 의 위치가 조금 다른 것 수정해야함 */
+.chat-mid1__date, .chat-mid2__date {
+    position: absolute;
+    float: left;
+    color: gray;
+    font-size: 13px;
+    margin-top: 9px;
+    margin-left: 400px;
+}
+
+.chat-mid2 {
+    margin-top: 18px;
+    position: relative;
+    display: flex;
+}
