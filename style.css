@@ -1,34 +1,27 @@
 body{
-    background-color: #fef01b;
-    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fef01b; font-family: 'Noto Sans KR', sans-serif;
 }
 
 .main{
     display: none;
 }
 
+a {
+    color:black;
+}
 .status-bar {
-    background-color: white;
-    display: flex;  justify-content: space-between; margin-bottom: 25px;
-    border: 2px solid white;
-    font-size: 14px;
-
-    position: fixed;
-    top:0;
-    right:0;
-    left:0;
+    background-color: white; display: flex;  justify-content: space-between; margin-bottom: 25px; border: 2px solid white; font-size: 14px;
+    position: fixed; top:0; right:0; left:0;
 }
 
 .menu-top {
-    background-color: white;
-    display: flex;  justify-content: space-between; 
-    margin-bottom: 20px;
-    margin-top: 50px;
+    background-color: white; display: flex;  justify-content: space-between;  position: fixed; top:0; right:0; left:0;
+    margin-bottom: 10px; margin-top: 40px;
+    padding: 8px;
 }
 
 .menu-top__text {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 20px; font-weight: bold;
 }
 
 .menu-top__icon {
@@ -36,11 +29,16 @@ body{
 }
 
 .menu-top__icon1, .menu-top__icon2, .menu-top__icon3 {
-    margin-right: 15px;
+    margin-right: 18px;
 }
 
+.adv {
+    display: flex;  justify-content: start; margin-bottom: 12px;
+    margin-top:100px;
+}
 .profile {
     display: flex;  justify-content: start; margin-bottom: 12px;
+    margin-top:100px;
 }
 
 .multi-pr, .birth, .reco, .ch {
@@ -66,96 +64,88 @@ body{
 }
 
 .before {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    height: 800px;
+    display: flex; align-items: center; justify-content: center;  height: 800px;
     font-family: Helvetica;
-    margin:0;
-    top:50%;
-    left:50%;
+    margin:0; top:50%; left:50%;
 }
 .before__text {
     font-size: 30px;
 }
 
 .title1-list, .title2-list, .title3-list, .title4-list, .title5-list {
-    font-size: 14px;
-    color: gray;
+    font-size: 14px; color: gray;
     margin-top: 15px;
 }
 
 /* 이부분이 지금 문제! */
 .title1-list, .title2-list, .title3-list, .title4-list, .title5-list {
-    background-color: white;
-    display: flex;  justify-content: space-between;
+    background-color: white; display: flex;  justify-content: space-between;
 }
 .multi-pr__text, .birth__text, .reco__text, .ch__text {
-    color: black;
-    font-size: 16px;
-    margin-top: 16px;
-    margin-left: 7px;
+    color: black; font-size: 16px;
+    margin-top: 16px; margin-left: 7px;
 }
 
 /* 상메가 있을때 */
 .fr-list__name1 {
-    margin-top: 8px;
-    margin-left: 7px;
-    font-size: 16px;
+    margin-top: 8px; margin-left: 7px; font-size: 16px;
 }
 
 .fr-list__msg1 {
-    margin-top: 27px;
-    margin-left: -29px;
-    font-size: 13px;
-    color: gray;
+    margin-top: 27px; margin-left: -29px; font-size: 13px; color: gray;
 }
 
 /* 상메가 없을떄 */
 .fr-list__name2 {
-    margin-top: 16px;
-    margin-left: 7px;
-    font-size: 16px;
+    margin-top: 16px; margin-left: 7px; font-size: 16px;
 }
 
 .bottom__icon {
-    display: flex;
-    justify-content: space-around;
-    font-size: 22px;
-    position: fixed;
-    right:0;
-    left:0;
-    bottom:0;
-    padding: 15px;
-    background-color: #F6F6F6;
+    display: flex; justify-content: space-around; font-size: 22px; position: fixed; right:0; left:0; bottom:0; padding: 15px; background-color: #F6F6F6;
 }
+
 .bottom__line {
-    display: flex;
-    justify-content: space-around;
-    font-size: 22px;
-    position: fixed;
-    right:0;
-    left:0;
-    bottom:0;
-    padding: 32px;
-    background-color: #EAEAEA;
+    justify-content: space-around; font-size: 22px; position: fixed; right:0; left:0; bottom:0; padding: 32px; background-color: #EAEAEA;
+}
+
+.bottom {
+    display: fixed;
+}
+
+.bottom__icon2 {
+    position:relative;
 }
 
 .profile__img img {
-    width: 50px;
-    height: 50px;
+    width: 50px; height: 50px; 
     object-fit: cover; /* 이미지 배율 */
     border-radius: 40%; /* 이미지 둥글게 */
-    
+}
+
+.adv__img img {
+    width: 430px; height: 70px;
+    align-items: center;
+    object-fit: cover; /* 이미지 배율 */
+    border-radius: 2%; /* 이미지 둥글게 */
 }
 
 .multi-pr__img-fr img, .birth__img-fr img, .reco__img-fr img, .ch__img-fr img, .fr-list__img-fr img {
-    width: 40px;
-    height: 40px;
+    width: 40px; height: 40px; margin: 5px; margin-top: 8px;
     object-fit: cover; /* 이미지 배율 */
     border-radius: 40%; /* 이미지 둥글게 */
-    margin: 5px;
-    margin-top: 8px;
+}
+
+.alarm__cir {
+    background-color: red; border-radius: 50%; width: 4%; height: 18px;
+    text-align:center; line-height:18px; font-size:13px; color: white;
+    position: fixed;
+}
+
+/* 카톡창이 최소값이 고정되어야 함. (숫자창은 움직이지 않음. 뒤에 말풍선 아이콘에 붙이는 법이 있나??)*/
+.alarm {
+    position: fixed;
+    top:836px;
+    left:140px;
 }
 
 .profile_img {
