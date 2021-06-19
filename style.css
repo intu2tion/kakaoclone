@@ -33,10 +33,6 @@ a {
     margin-right: 18px;
 }
 
-.adv {
-    display: flex;  justify-content: start; margin-bottom: 12px;
-    margin-top:100px;
-}
 .profile {
     display: flex;  justify-content: start; margin-bottom: 12px;
     margin-top:100px;
@@ -106,7 +102,7 @@ a {
 }
 
 .bottom__line {
-    justify-content: space-around; font-size: 22px; position: fixed; right:0; left:0; bottom:0; padding: 32px; background-color: #EAEAEA;
+    position: fixed; right:0; left:0; bottom:0; padding: 32px; background-color: #EAEAEA;
 }
 
 .bottom {
@@ -121,13 +117,6 @@ a {
     width: 50px; height: 50px; 
     object-fit: cover; /* 이미지 배율 */
     border-radius: 40%; /* 이미지 둥글게 */
-}
-
-.adv__img img {
-    width: 430px; height: 70px;
-    align-items: center;
-    object-fit: cover; /* 이미지 배율 */
-    border-radius: 2%; /* 이미지 둥글게 */
 }
 
 .multi-pr__img-fr img, .birth__img-fr img, .reco__img-fr img, .ch__img-fr img, .fr-list__img-fr img {
@@ -160,44 +149,63 @@ a {
 }
 
 /*      index2        */
+
+.adv {
+    margin-bottom: -19px;
+    margin-top:144px;
+}
+
+.adv__img img {
+    position: relative;
+    transform: translate(-50%, -50%);
+    left:50%;
+    width: 430px; height: 70px;
+    align-items: center;
+    object-fit: cover; /* 이미지 배율 */
+    border-radius: 5%; /* 이미지 둥글게 */
+}
+
 .chat-mid1__pro img, .chat-mid2__pro img {
     width: 45px; height: 45px; 
     object-fit: cover;
     border-radius: 40%;
+    display: flex;
 }
 
 .chat-mid1 {
     position: relative;
     display: flex;
+    cursor: pointer; 
 }
 
 .chat-mid2 {
     margin-top: 18px;
-    position: relative;
     display: flex;
 }
 
 .chat-mid1__name, .chat-mid2__name {
-    display: flex;
-    margin-left: 15px;
+    margin-left: 55px;
     margin-top: 3px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 15px;     position: absolute;
 }
 
 .chat-mid1__chat, .chat-mid2__chat {
+    position: absolute;
+    display: flex;
     font-size: 13px;
     margin-top: 23px;
-    margin-left: -43px;
+    margin-left: 55px;
     color: gray;
 }
 
 /* 12:32와 어제 의 위치가 조금 다른 것 수정해야함 */
-.chat-mid1__date, .chat-mid2__date {
-    position: absolute; 
-    /* 적용이 안됨! 왜일까? */ justify-content: flex-end;
+.chat-mid1__date, .chat-mid2__date { 
+    margin-left: auto; /* margin-left= auto; 만 쓰면 오른쪽 정렬되는건가? */
     color: gray;
+    float: right;
     font-size: 13px;
+
 }
 
 
