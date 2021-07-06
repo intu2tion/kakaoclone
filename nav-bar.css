@@ -1,0 +1,47 @@
+
+
+.nav__list {  
+    position:fixed;
+    bottom:0;
+    width:100%;
+    display:flex;
+    /* box-sizing:border-box; */
+    justify-content: space-around;
+    padding:20px 0px;
+    background-color: #f9f9fa;
+    border-top: 1px solid rgb(241, 241, 241);
+}
+
+.nav__link {
+    color: #2f363e;
+    position:relative;
+}
+
+
+.nav__notification {
+    background-color: tomato;
+    /* display: block; 이 코드가 display:flex 밑에 쓰여지면 flex가 적용이 안됨.*/
+    width:18px;
+    height:18px;
+    border-radius: 50%;
+    display:flex; /* 여기서 flex가 필요한 이유는 "자식인 (1)"을 정렬시키기 위해서.*/
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    color:ivory;
+    position: absolute;
+    top: -4px;
+    left: 15px;
+
+}
+
+.nav__dot {
+    background-color: tomato;
+    display: block;
+    width:5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    left: 21px;
+}
